@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet Tracker DApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero card">
+        <p class="tag">Repo blockchain thứ 4</p>
+        <h1>Wallet Tracker DApp</h1>
+        <p class="subtitle">
+          Ứng dụng mô phỏng theo dõi ví blockchain: xem số dư, thống kê giao dịch và hoạt động gần đây trong giao diện dạng dashboard.
+        </p>
+      </section>
+
+      <section class="grid top-grid">
+        <div class="card">
+          <h2>Theo dõi ví</h2>
+          <form id="wallet-form" class="form">
+            <label>
+              Địa chỉ ví
+              <input id="wallet-address" type="text" placeholder="Ví dụ: 0x8f2a...c91d" required />
+            </label>
+            <button type="submit">Tải dữ liệu ví</button>
+          </form>
+          <p id="wallet-note" class="note">Chưa có ví nào được tải.</p>
+        </div>
+
+        <div class="card info-card">
+          <h2>Chế độ demo</h2>
+          <ul>
+            <li>Dữ liệu trong dự án này đang là dữ liệu mô phỏng để trình bày giao diện DApp.</li>
+            <li>Phiên bản hoàn chỉnh có thể kết nối API hoặc thư viện web3 để đọc dữ liệu thật.</li>
+            <li>Phù hợp để trưng bày trên GitHub dưới dạng dự án dashboard blockchain.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="card stat-card">
+          <span>Số dư ước tính</span>
+          <strong id="wallet-balance">0.00 ETH</strong>
+        </article>
+        <article class="card stat-card">
+          <span>Tổng giao dịch</span>
+          <strong id="tx-count">0</strong>
+        </article>
+        <article class="card stat-card">
+          <span>Nhận token</span>
+          <strong id="receive-count">0</strong>
+        </article>
+        <article class="card stat-card">
+          <span>Gửi token</span>
+          <strong id="send-count">0</strong>
+        </article>
+      </section>
+
+      <section class="grid bottom-grid">
+        <div class="card">
+          <div class="section-header">
+            <h2>Lịch sử giao dịch</h2>
+            <select id="filter-type">
+              <option value="all">Tất cả</option>
+              <option value="receive">Nhận</option>
+              <option value="send">Gửi</option>
+              <option value="contract">Hợp đồng</option>
+            </select>
+          </div>
+          <ul id="transaction-list" class="transaction-list"></ul>
+          <p id="empty-state" class="empty-state">Chưa có dữ liệu giao dịch.</p>
+        </div>
+
+        <div class="card">
+          <h2>Tóm tắt ví</h2>
+          <div class="summary-box" id="summary-box">
+            <p>Hãy nhập địa chỉ ví để xem dữ liệu mô phỏng.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

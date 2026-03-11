@@ -42,4 +42,4 @@ wallet-tracker-dapp/
 
 ## Gợi ý trưng bày trên GitHub
 
-Ông chủ nên nhập một địa chỉ ví, chụp giao diện có dữ liệu và thêm ảnh vào README để repo nổi bật hơn.
+<img width="1192" height="801" alt="2" src="https://github.com/user-attachments/assets/68fe28bf-468d-4821-b72e-3cc3108c416f" />
